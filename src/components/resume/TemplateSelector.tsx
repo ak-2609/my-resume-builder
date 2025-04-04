@@ -28,8 +28,8 @@ const TemplateSelector: React.FC = () => {
             key={t.id}
             className={`cursor-pointer transition-all ${
               template === t.id
-                ? "ring-2 ring-resume-blue"
-                : "hover:border-resume-blue"
+                ? "ring-2 ring-blue-600"
+                : "hover:border-blue-600"
             }`}
             onClick={() => setTemplate(t.id as "basic" | "modern")}
           >
@@ -37,9 +37,9 @@ const TemplateSelector: React.FC = () => {
               <div className="relative flex items-center justify-center w-16 h-16 rounded bg-resume-light-gray">
                 <span className="font-medium">{t.name}</span>
                 {template === t.id && (
-                  <div className="absolute -top-2 -right-2 bg-resume-blue text-white rounded-full p-1">
-                    <Check className="h-3 w-3" />
-                  </div>
+                  <div className="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full p-1">
+                  <Check className="h-3 w-3" />
+                </div>
                 )}
               </div>
               <div>

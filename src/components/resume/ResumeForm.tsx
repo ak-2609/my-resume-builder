@@ -358,7 +358,7 @@ const ResumeForm: React.FC = () => {
                   </div>
                 </div>
                 <Button
-                  className="mt-4 bg-resume-blue hover:bg-resume-dark-blue"
+                  className="mt-4 bg-blue-600 hover:bg-blue-700"
                   onClick={handleAddExperience}
                 >
                   <Plus className="mr-2 h-4 w-4" /> Add Experience
@@ -542,7 +542,7 @@ const ResumeForm: React.FC = () => {
                   </div>
                 </div>
                 <Button
-                  className="mt-4 bg-resume-blue hover:bg-resume-dark-blue"
+                  className="mt-4 bg-blue-600 hover:bg-blue-700"
                   onClick={handleAddEducation}
                 >
                   <Plus className="mr-2 h-4 w-4" /> Add Education
@@ -619,7 +619,7 @@ const ResumeForm: React.FC = () => {
                   </div>
                   <Button
                     onClick={handleAddSkill}
-                    className="bg-resume-blue hover:bg-resume-dark-blue"
+                    className="bg-blue-600 hover:bg-blue-700"
                   >
                     <Plus className="mr-2 h-4 w-4" /> Add Skill
                   </Button>

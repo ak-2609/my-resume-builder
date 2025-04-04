@@ -8,22 +8,22 @@ import { FileText, CheckCircle, Zap, Download, ArrowRight } from "lucide-react";
 const Index: React.FC = () => {
   const features = [
     {
-      icon: <FileText className="h-10 w-10 text-resume-blue" />,
+      icon: <FileText style={{ color: 'blue', height: '2.5rem', width: '2.5rem' }} />,
       title: "Professional Templates",
       description: "Choose from our collection of ATS-friendly resume templates designed by HR professionals.",
     },
     {
-      icon: <CheckCircle className="h-10 w-10 text-resume-blue" />,
+      icon: <CheckCircle style={{ color: 'blue', height: '2.5rem', width: '2.5rem' }} />,
       title: "Easy to Use",
       description: "Our intuitive builder makes creating a standout resume quick and simple, no design skills needed.",
     },
     {
-      icon: <Zap className="h-10 w-10 text-resume-blue" />,
+      icon: <CheckCircle style={{ color: 'blue', height: '2.5rem', width: '2.5rem' }} />,
       title: "Real-time Preview",
       description: "See changes to your resume instantly as you type, allowing for quick refinements.",
     },
     {
-      icon: <Download className="h-10 w-10 text-resume-blue" />,
+      icon: <CheckCircle style={{ color: 'blue', height: '2.5rem', width: '2.5rem' }} />,
       title: "Download as PDF",
       description: "Export your polished resume as a professional PDF file ready to share with employers.",
     },
@@ -41,14 +41,14 @@ const Index: React.FC = () => {
               <div className="flex flex-col justify-center space-y-4 animate-slide-in">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-resume-dark-gray">
-                    Create a <span className="text-resume-blue">Professional Resume</span> in Minutes
+                    Create a <span className="text-blue-600">Professional Resume</span> in Minutes
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl">
                     Stand out from the crowd with a beautifully designed resume. Our easy-to-use builder helps you create an interview-winning document.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button asChild size="lg" className="bg-resume-blue hover:bg-resume-dark-blue text-white">
+                  <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                     <Link to="/builder">
                       Create Your Resume <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
@@ -64,7 +64,7 @@ const Index: React.FC = () => {
                       className="rounded-lg object-cover w-full"
                     />
                   </div>
-                  <div className="absolute -bottom-4 -right-4 bg-resume-blue text-white rounded-lg px-4 py-2 shadow-lg">
+                  <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white rounded-lg px-4 py-2 shadow-lg">
                     Easy to use!
                   </div>
                 </div>
@@ -98,13 +98,13 @@ const Index: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-resume-blue text-white py-16 w-full">
+        <section className="bg-blue-600 text-white py-16 w-full">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Land Your Dream Job?</h2>
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
               Start building your professional resume today and take the first step towards your new career.
             </p>
-            <Button asChild size="lg" className="bg-white text-resume-blue hover:bg-resume-light-gray">
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               <Link to="/builder">
                 Start Building Your Resume
               </Link>

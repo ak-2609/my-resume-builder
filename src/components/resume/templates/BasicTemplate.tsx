@@ -17,7 +17,7 @@ const BasicTemplate: React.FC<BasicTemplateProps> = ({ data }) => {
         <h1 className="text-3xl font-bold text-resume-dark-gray">
           {personalInfo.firstName} {personalInfo.lastName}
         </h1>
-        <p className="text-resume-blue mt-1 text-lg">{personalInfo.title}</p>
+        <p className="text-blue-600 mt-1 text-lg">{personalInfo.title}</p>
         
         <div className="mt-3 flex flex-wrap gap-4 text-sm text-gray-600">
           {personalInfo.email && (
@@ -55,7 +55,7 @@ const BasicTemplate: React.FC<BasicTemplateProps> = ({ data }) => {
       {/* Summary */}
       {personalInfo.summary && (
         <div className="mb-6">
-          <h2 className="text-lg font-bold mb-2 text-resume-blue">Professional Summary</h2>
+          <h2 className="text-lg font-bold mb-2 text-blue-600">Professional Summary</h2>
           <p className="text-gray-700">{personalInfo.summary}</p>
         </div>
       )}
@@ -63,10 +63,10 @@ const BasicTemplate: React.FC<BasicTemplateProps> = ({ data }) => {
       {/* Experience */}
       {experience.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-lg font-bold mb-2 text-resume-blue">Work Experience</h2>
+          <h2 className="text-lg font-bold mb-2 text-blue-600">Work Experience</h2>
           <div className="space-y-4">
             {experience.map((exp, index) => (
-              <div key={index} className="border-l-2 border-resume-light-blue pl-4">
+              <div key={index} className="border-l-2 border-blue-300 pl-4">
                 <h3 className="font-bold">{exp.position}</h3>
                 <div className="text-resume-gray text-sm mb-1">
                   {exp.company} | {exp.location}
@@ -84,10 +84,10 @@ const BasicTemplate: React.FC<BasicTemplateProps> = ({ data }) => {
       {/* Education */}
       {education.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-lg font-bold mb-2 text-resume-blue">Education</h2>
+          <h2 className="text-lg font-bold mb-2 text-blue-600">Education</h2>
           <div className="space-y-4">
             {education.map((edu, index) => (
-              <div key={index} className="border-l-2 border-resume-light-blue pl-4">
+              <div key={index} className="border-l-2 border-blue-300 pl-4">
                 <h3 className="font-bold">{edu.degree}</h3>
                 <div className="text-resume-gray text-sm mb-1">
                   {edu.school} | {edu.fieldOfStudy}
@@ -105,7 +105,7 @@ const BasicTemplate: React.FC<BasicTemplateProps> = ({ data }) => {
       {/* Skills */}
       {skills.length > 0 && (
         <div>
-          <h2 className="text-lg font-bold mb-2 text-resume-blue">Skills</h2>
+          <h2 className="text-lg font-bold mb-2 text-blue-600">Skills</h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
               <div key={index} className="bg-resume-light-gray px-3 py-1 rounded-full text-resume-dark-gray">

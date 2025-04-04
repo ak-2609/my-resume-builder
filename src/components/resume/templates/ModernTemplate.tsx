@@ -13,7 +13,7 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
   return (
     <div className="w-full bg-white shadow-lg max-w-[800px] mx-auto">
       {/* Header */}
-      <div className="bg-resume-blue text-white p-8">
+      <div className="bg-blue-600 text-white p-8">
         <h1 className="text-3xl font-bold">
           {personalInfo.firstName} {personalInfo.lastName}
         </h1>
@@ -58,7 +58,7 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
           {/* Skills */}
           {skills.length > 0 && (
             <div className="mb-8">
-              <h2 className="text-lg font-bold border-b-2 border-resume-light-blue pb-2 mb-3">SKILLS</h2>
+              <h2 className="text-lg font-bold border-b-2 border-blue-300 pb-2 mb-3">SKILLS</h2>
               <div className="space-y-3">
                 {skills.map((skill, index) => (
                   <div key={index}>
@@ -66,10 +66,10 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
                       <span className="font-medium">{skill.name}</span>
                     </div>
                     <div className="w-full bg-resume-light-gray rounded-full h-2">
-                      <div 
-                        className="bg-resume-blue h-2 rounded-full" 
-                        style={{ width: `${Math.min(skill.level * 20, 100)}%` }}
-                      ></div>
+                    <div 
+                      className="bg-blue-600 h-2 rounded-full" 
+                      style={{ width: `${Math.min(skill.level * 20, 100)}%` }}
+                    ></div>
                     </div>
                   </div>
                 ))}
@@ -80,12 +80,12 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
           {/* Education */}
           {education.length > 0 && (
             <div>
-              <h2 className="text-lg font-bold border-b-2 border-resume-light-blue pb-2 mb-3">EDUCATION</h2>
+              <h2 className="text-lg font-bold border-b-2 border-blue-300 pb-2 mb-3">EDUCATION</h2>
               <div className="space-y-4">
                 {education.map((edu, index) => (
                   <div key={index} className="mb-4">
                     <h3 className="font-bold">{edu.school}</h3>
-                    <p className="text-resume-blue">{edu.degree}</p>
+                    <p className="text-blue-600">{edu.degree}</p>
                     <p className="text-sm text-resume-gray">{edu.fieldOfStudy}</p>
                     <p className="text-sm text-resume-gray italic">
                       {edu.startDate} - {edu.endDate || "Present"}
@@ -103,7 +103,7 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
           {/* Summary */}
           {personalInfo.summary && (
             <div className="mb-6">
-              <h2 className="text-lg font-bold border-b-2 border-resume-light-blue pb-2 mb-3">PROFESSIONAL SUMMARY</h2>
+              <h2 className="text-lg font-bold border-b-2 border-blue-300 pb-2 mb-3">PROFESSIONAL SUMMARY</h2>
               <p className="text-gray-700">{personalInfo.summary}</p>
             </div>
           )}
@@ -111,7 +111,7 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
           {/* Experience */}
           {experience.length > 0 && (
             <div>
-              <h2 className="text-lg font-bold border-b-2 border-resume-light-blue pb-2 mb-3">WORK EXPERIENCE</h2>
+              <h2 className="text-lg font-bold border-b-2 border-blue-300 pb-2 mb-3">WORK EXPERIENCE</h2>
               <div className="space-y-6">
                 {experience.map((exp, index) => (
                   <div key={index}>
@@ -121,7 +121,7 @@ const ModernTemplate: React.FC<ModernTemplateProps> = ({ data }) => {
                         {exp.startDate} - {exp.endDate || "Present"}
                       </div>
                     </div>
-                    <p className="text-resume-blue mb-2">{exp.company}, {exp.location}</p>
+                    <p className="text-blue-600 mb-2">{exp.company}, {exp.location}</p>
                     <p className="text-gray-700">{exp.description}</p>
                   </div>
                 ))}

@@ -80,7 +80,7 @@ const ResumePreview: React.FC = () => {
         <h2 className="text-lg font-medium">Resume Preview</h2>
         <Button 
           onClick={downloadAsPDF} 
-          className="bg-resume-blue hover:bg-resume-dark-blue text-white"
+          className="bg-blue-600 hover:bg-blue-700 text-white"
         >
           <Download className="mr-2 h-4 w-4" /> Download PDF
         </Button>
