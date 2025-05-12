@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
         <FileText className="h-6 w-6 text-blue-600" />
-        <Link to="/" className="text-xl font-bold text-blue-600">MockAI</Link>
+        <Link to="/" className="text-xl font-bold text-blue-600">ResumeForge</Link>
         </div>
         <nav className="hidden md:flex items-center gap-6">
           <Link 
